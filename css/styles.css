@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: "Roboto Condensed", sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -29,6 +29,7 @@ a {
   min-height: 92px;
 }
 #nav1 ul li p {
+  font-family: Helvetica;
   margin: 11px 32px auto auto;
   padding-bottom: 12px;
   color: #262626;
@@ -82,18 +83,19 @@ a {
 #main-banner img {
   height: 152px;
   width: auto;
-  margin: 181px auto auto 64px;
+  margin: 157px auto auto 64px;
 }
 #slogan {
   color: #ffff;
-  padding: 40px 0 0 30px;
+  padding: 47px 0 0 30px;
 }
 #slogan h2 {
-  font-size: 4.3rem;
+  font-size: 4.8rem;
 }
 #slogan p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: -5px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
 }
 
 #nav2 {
@@ -106,7 +108,7 @@ a {
   min-height: 85px;
 }
 #nav2 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #262626;
 }
 #nav2-right {
@@ -118,8 +120,10 @@ a {
   font-size: 1.05rem;
 }
 #nav2-right h3 {
+  font-family: Helvetica;
   color: #838383;
   position: relative;
+  padding: 30px 0;
 }
 #nav2-right h3:not(#special):hover {
   color: #262626;
@@ -128,7 +132,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -2px;
   height: 4px;
   width: 100%;
   background: #cd9834;
@@ -147,4 +151,36 @@ a {
 }
 #nav2-right #special:hover {
   background-color: #cd9834;
+}
+
+#advantages {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 60px 23px;
+}
+#advantages div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 87px;
+}
+#advantages div:not(:last-child) {
+  border-right: 1px solid #262626;
+}
+#advantages h2 {
+  color: #262626;
+  letter-spacing: 2.8px;
+  font-weight: 500;
+}
+#advantages h3 {
+  color: #6e6e6e;
+  font-weight: 400;
+}
+#advantages > div:not(#wheels) > h2 {
+  margin-bottom: 35px;
+}
+#advantages #wheels h3 {
+  margin-top: 5px;
 }
