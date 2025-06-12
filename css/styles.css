@@ -292,8 +292,12 @@ a {
 }
 
 footer h3 {
-  margin: 60px auto 10px 30px;
+  margin: 60px auto 30px 30px;
   color: #6e6e6e;
   font-weight: 400;
   font-size: 20px;
+}
+footer p {
+  margin: 10px auto 10px 30px;
+  color: #ff0000;
 }
